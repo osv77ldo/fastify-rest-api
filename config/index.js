@@ -2,7 +2,7 @@ if(process.env.NODE_ENV !== 'production'){
   require('dotenv').config();
 }
 module.exports = {
-  PORT: process.env.PORT,
+  PORT: process.env.PORT || 3000,
   MONGODB_URI: process.env.MONGODB_URI,
   CLOUDINARY_URL: process.env.CLOUDINARY_URL,
   SENDGRID_API_KEY: process.env.SENDGRID_API_KEY,
