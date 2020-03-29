@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect(MONGODB_URI, {useNewUrlParser: true})
 .then( () => {
-  server.listen(PORT, error => {
+  server.listen(PORT, '0.0.0.0',  error => {
     if(error){
       fastify.log.error(error);
       process.exit(1);
