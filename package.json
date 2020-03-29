@@ -4,7 +4,8 @@
   "description": "Rest API con FASTIFY.js",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "engines": {
     "node": "11.x.x",
